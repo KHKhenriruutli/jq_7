@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>jq_6</title>
+    <link rel="stylesheet" href="jq_7.css">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('nav li').hover(
+                function () {
+                    $('ul', this).stop().slideDown(200);
+                },
+                function () {
+                    $('ul', this).stop().slideUp(200);
+                }
+            );
+
+        });
+
+    </script>
+
+
+</head>
+
+
+<body>
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#"> Avaleht</a>
+                <ul>
+                    <li class="peida"><a href="#"> Alamenüü 1</a></li>
+                    <li class="peida"><a href="#"> Alamenüü 2</a></li>
+                    <li class="peida"><a href="#"> Alamenüü 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#"> Muu</a></li>
+            <li><a href="#"> Muu</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li> <a href="#">Categories </a>
+                <ul>
+                    <li><a href="#">Category One</a></li>
+                    <li><a href="#">Category Two</a></li>
+                    <li><a href="#">Category Three</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav> -->
+
+
+</body>
+
+
+</html>
